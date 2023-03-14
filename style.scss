@@ -1,0 +1,41 @@
+$paragraf-bcolor: rgb(255, 255, 155);
+$paragraf-tcolor: rgb(252, 58, 90);
+
+body {
+    background-color: rgb(135, 180, 236);
+}
+
+@mixin button {
+    border-radius: 5px;
+    background-color: aquamarine;
+    width: 3.5%;
+    font-size: 15px;
+}
+
+.click {
+    @include button;
+}
+
+.me {
+    @include button;
+}
+
+@mixin heading{
+    background-color: rgb(230, 5, 230); 
+    color: white;
+}
+
+h2 {
+    @include heading;
+    font-size: 20px *2;
+}
+
+h3 {
+    @include heading;
+}
+
+p { 
+    background-color: $paragraf-bcolor;
+    color: $paragraf-tcolor
+}
+
